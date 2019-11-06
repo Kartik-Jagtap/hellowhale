@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellowhale
+  labels:
+    app: hellowhale
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hellowhale
+  template: 
+    metadata: 
+      labels: 
+        app: hellowhale 
+    spec:
+      containers:
+        - name: spring-boot
+          image: kartikrj/hellowhale
+          ports:
+            - containerPort: 8090
