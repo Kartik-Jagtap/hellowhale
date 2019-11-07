@@ -20,4 +20,4 @@ spec:
           ports:
             - containerPort: 8080
       imagePullSecrets:
-      - name: acs-plugin--10lqccqmr1
+      - name: docker-creds
