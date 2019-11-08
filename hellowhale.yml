@@ -33,4 +33,4 @@ spec:
     app: hellowhale
   ports:
     - port: 80
-      targetPort: 30011
+      
