@@ -28,7 +28,6 @@ kind: Service
 metadata:
   name: hellowhale
 spec:
-  name: hellowhale-LB
   type: LoadBalancer
   selector:
     app: hellowhale
